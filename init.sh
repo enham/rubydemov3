@@ -21,8 +21,8 @@ cp ../install/Gemfile .
 scl enable ruby193 "rails generate scaffold participant first_name:string last_name:string email_address:string"
 cp ../install/database.yml config/
 #cp ../install/deploy .openshift/action_hooks
-cp ../install/index.html.erb app/views/participants/
-cp ../install/application.html.erb app/views/layouts/
+#cp ../install/index.html.erb app/views/participants/
+#cp ../install/application.html.erb app/views/layouts/
 cp ../install/migrate-database.sh .
 #cp ../install/routes.rb config/
 sed -i '2i\  root :to => "participants#index"' config/routes.rb
